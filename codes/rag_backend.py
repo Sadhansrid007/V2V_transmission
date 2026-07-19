@@ -23,7 +23,7 @@ import chromadb
 from groq import Groq
 from sentence_transformers import SentenceTransformer
 
-from config import GROQ_API_KEY, GROQ_MODEL, EMBEDDING_MODEL, CHROMA_DIR, TRANSCRIPT_DIR
+from config import GROQ_API_KEY, GROQ_MODEL, EMBEDDING_MODEL, CHROMA_DIR, TRANSCRIPT_DIR, SEGMENT_MIN_SECONDS, SEGMENT_MAX_GAP_SECONDS
 from query_expander import expand_query
 
 _embedding_model = None
@@ -56,27 +56,63 @@ def _collection_name(video_id: str) -> str:
     return f"lecture_{video_id}"
 
 
-def _merge_segments(segments: list[dict], window: int = 4, stride: int = 2) -> list[dict]:
+def _merge_segments(
+    segments: list[dict],
+    min_seconds: float = SEGMENT_MIN_SECONDS,
+    max_gap_seconds: float = SEGMENT_MAX_GAP_SECONDS,
+) -> list[dict]:
     """
-    Groups consecutive transcript segments into overlapping windows.
-    Single segments are often too short to carry enough context for
-    good retrieval (e.g. "and that's why" on its own is meaningless),
-    so we combine a few at a time. The overlap (stride < window) means
-    a concept that falls near a window boundary still gets fully
-    captured in at least one chunk.
+    Greedily merges consecutive transcript segments into retrieval
+    chunks based on duration and pause length, rather than a fixed
+    number of segments per chunk.
+
+    A chunk keeps growing by appending segments until its running
+    duration (last.end - first.start) reaches min_seconds -- at that
+    point it's closed, including the segment that pushed it over.
+
+    Early-close override: while still under the duration target, if
+    the gap to the next segment is >= max_gap_seconds, the chunk closes
+    early rather than reaching across a long pause (e.g. a break, or a
+    switch in topic) just to hit the duration target.
+
+    This is more natural than a fixed window/stride: a long uninterrupted
+    explanation becomes one coherent chunk, while a short segment right
+    before a long pause doesn't get artificially padded with unrelated
+    content from after the pause.
     """
-    merged = []
-    i = 0
-    while i < len(segments):
-        group = segments[i:i + window]
-        if not group:
-            break
-        merged.append({
-            "text": " ".join(s["text"] for s in group),
+    if not segments:
+        return []
+
+    def _duration(group: list[dict]) -> float:
+        return group[-1]["end"] - group[0]["start"]
+
+    def _flush(group: list[dict]) -> dict:
+        return {
+            "text": " ".join(s["text"].strip() for s in group).strip(),
             "start": group[0]["start"],
             "end": group[-1]["end"],
-        })
-        i += stride
+        }
+
+    merged = []
+    current = [segments[0]]
+
+    for seg in segments[1:]:
+        if _duration(current) >= min_seconds:
+            merged.append(_flush(current))
+            current = [seg]
+            continue
+
+        gap = seg["start"] - current[-1]["end"]
+        if gap >= max_gap_seconds:
+            merged.append(_flush(current))
+            current = [seg]
+            continue
+
+        current.append(seg)
+
+    if current:
+        merged.append(_flush(current))
+
     return merged
 
 

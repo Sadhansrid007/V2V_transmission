@@ -7,6 +7,12 @@ same concept (e.g. "pointers" vs "memory addresses" vs "referencing variables").
 
 Uses a small, fast Groq model (llama-3.1-8b-instant) since this is a
 cheap rewriting task, not something that needs the big model.
+
+CHANGE vs the previous version: variants are now deduplicated before
+being returned. If the model repeats a phrasing across two of its
+numbered lines, that used to cost a second, identical embedding +
+Chroma query for zero extra recall -- now it's filtered out while
+preserving order (dict.fromkeys keeps first occurrence, drops repeats).
 """
 
 from groq import Groq
@@ -63,5 +69,10 @@ Return ONLY a numbered list, one variant per line. No explanations.
         expanded = [student_prompt]
     elif student_prompt not in expanded:
         expanded.append(student_prompt)
+
+    # Dedup while preserving order -- the model occasionally repeats a
+    # phrasing across two numbered lines, which otherwise means two
+    # identical embedding searches for zero extra recall.
+    expanded = list(dict.fromkeys(expanded))
 
     return expanded
