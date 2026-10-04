@@ -1,0 +1,2733 @@
+{
+  "dd68ca631f44dd26": [
+    {
+      "topic_id": 1,
+      "start_segment": 0,
+      "end_segment": 30,
+      "start_time": 509.12,
+      "end_time": 721.26,
+      "segments": [
+        {
+          "id": 0,
+          "start": 509.12,
+          "end": 511.1,
+          "duration": 1.98,
+          "text": "pay attention please all of you."
+        },
+        {
+          "id": 1,
+          "start": 512.04,
+          "end": 519.06,
+          "duration": 7.02,
+          "text": "So, in the morning we discussed about operating system services."
+        },
+        {
+          "id": 2,
+          "start": 519.06,
+          "end": 524.36,
+          "duration": 5.3,
+          "text": "System calls also, I told little bit about system calls."
+        },
+        {
+          "id": 3,
+          "start": 524.36,
+          "end": 525.76,
+          "duration": 1.4,
+          "text": "What are system calls?"
+        },
+        {
+          "id": 4,
+          "start": 533.14,
+          "end": 541.72,
+          "duration": 8.58,
+          "text": "So, system calls basically provide user the medium to access operating system services."
+        },
+        {
+          "id": 5,
+          "start": 542.52,
+          "end": 558.12,
+          "duration": 15.6,
+          "text": "So, what were the operating system services that we discussed in the morning? process management, file management, input output management, resource allocation, protection, security."
+        },
+        {
+          "id": 6,
+          "start": 558.12,
+          "end": 562.96,
+          "duration": 4.84,
+          "text": "So all these services we discussed in the morning for an operating system."
+        },
+        {
+          "id": 7,
+          "start": 562.96,
+          "end": 570.04,
+          "duration": 7.08,
+          "text": "So system calls provide interface to the services which can be made available to the users."
+        },
+        {
+          "id": 8,
+          "start": 570.04,
+          "end": 572.78,
+          "duration": 2.74,
+          "text": "So how these calls are available?"
+        },
+        {
+          "id": 9,
+          "start": 572.78,
+          "end": 577.7,
+          "duration": 4.92,
+          "text": "These are generally available as routines written in high level language."
+        },
+        {
+          "id": 10,
+          "start": 578.36,
+          "end": 588.16,
+          "duration": 9.8,
+          "text": "So, see when you type your instruction in high level language, like in C for reading and writing, which functions do you use?"
+        },
+        {
+          "id": 11,
+          "start": 588.16,
+          "end": 591.86,
+          "duration": 3.7,
+          "text": "ScanF and printF."
+        },
+        {
+          "id": 12,
+          "start": 591.86,
+          "end": 601.74,
+          "duration": 9.88,
+          "text": "But operating system does not understand these routines, these functions which you have written in high level language."
+        },
+        {
+          "id": 13,
+          "start": 602.58,
+          "end": 605.9,
+          "duration": 3.32,
+          "text": "Operating system understands only system calls."
+        },
+        {
+          "id": 14,
+          "start": 605.9,
+          "end": 612.0,
+          "duration": 6.1,
+          "text": "So what happens when you write function printf suppose in C?"
+        },
+        {
+          "id": 15,
+          "start": 612.0,
+          "end": 616.32,
+          "duration": 4.32,
+          "text": "So C library will intercept that function."
+        },
+        {
+          "id": 16,
+          "start": 616.32,
+          "end": 621.86,
+          "duration": 5.54,
+          "text": "It will convert it into corresponding system call."
+        },
+        {
+          "id": 17,
+          "start": 621.86,
+          "end": 627.08,
+          "duration": 5.22,
+          "text": "And what is the corresponding system call for this printf?"
+        },
+        {
+          "id": 18,
+          "start": 626.9,
+          "end": 639.16,
+          "duration": 12.26,
+          "text": "So, there are various system calls which are used for different purposes for know all these process management, file management which we will discuss in detail."
+        },
+        {
+          "id": 19,
+          "start": 638.84,
+          "end": 642.54,
+          "duration": 3.7,
+          "text": "So all these system calls you also will be using."
+        },
+        {
+          "id": 20,
+          "start": 642.0,
+          "end": 648.74,
+          "duration": 6.74,
+          "text": "So there are different system calls for windows and for unix the system calls are different."
+        },
+        {
+          "id": 21,
+          "start": 648.22,
+          "end": 660.66,
+          "duration": 12.44,
+          "text": "So we will be executing Linux commands, Linux system calls. printf in C programming language or high level language."
+        },
+        {
+          "id": 22,
+          "start": 660.48,
+          "end": 664.3,
+          "duration": 3.82,
+          "text": "Operating system do not understand this."
+        },
+        {
+          "id": 23,
+          "start": 664.22,
+          "end": 668.54,
+          "duration": 4.32,
+          "text": "Operating system does not understand what is this printf, what is this scanf."
+        },
+        {
+          "id": 24,
+          "start": 668.7,
+          "end": 673.86,
+          "duration": 5.16,
+          "text": "So C library will convert it into corresponding system call."
+        },
+        {
+          "id": 25,
+          "start": 673.56,
+          "end": 677.34,
+          "duration": 3.78,
+          "text": "So corresponding to printf the system call is write."
+        },
+        {
+          "id": 26,
+          "start": 678.24,
+          "end": 689.68,
+          "duration": 11.44,
+          "text": "So operating then that write system call is invoked. system will understand that system call and it will perform the required operation."
+        },
+        {
+          "id": 27,
+          "start": 689.18,
+          "end": 694.86,
+          "duration": 5.68,
+          "text": "So, this is an example of system call sequence."
+        },
+        {
+          "id": 28,
+          "start": 693.98,
+          "end": 700.28,
+          "duration": 6.3,
+          "text": "So, this is in an algorithm kind of view it is being given."
+        },
+        {
+          "id": 29,
+          "start": 699.38,
+          "end": 705.88,
+          "duration": 6.5,
+          "text": "So, we will execute the corresponding system calls for these functions."
+        },
+        {
+          "id": 30,
+          "start": 710.72,
+          "end": 721.26,
+          "duration": 10.54,
+          "text": "So, system calls can be grouped roughly into six major categories, process control, file manipulation, device manipulation, information maintenance,"
+        }
+      ],
+      "boundary_score": 0.15135425329208374
+    },
+    {
+      "topic_id": 2,
+      "start_segment": 31,
+      "end_segment": 45,
+      "start_time": 1106.74,
+      "end_time": 1215.86,
+      "segments": [
+        {
+          "id": 31,
+          "start": 1106.74,
+          "end": 1108.82,
+          "duration": 2.08,
+          "text": "you change, battery is not"
+        },
+        {
+          "id": 32,
+          "start": 1142.6,
+          "end": 1146.06,
+          "duration": 3.46,
+          "text": "can grow inwards, heap can grow outwards."
+        },
+        {
+          "id": 33,
+          "start": 1145.54,
+          "end": 1149.5,
+          "duration": 3.96,
+          "text": "So this tack and heap can expand."
+        },
+        {
+          "id": 34,
+          "start": 1149.0,
+          "end": 1156.48,
+          "duration": 7.48,
+          "text": "So their size is not fixed in the memory depending upon the process requirement stack and heap can expand."
+        },
+        {
+          "id": 35,
+          "start": 1156.0,
+          "end": 1160.5,
+          "duration": 4.5,
+          "text": "So this is memory layout of a simple C program."
+        },
+        {
+          "id": 36,
+          "start": 1161.18,
+          "end": 1163.52,
+          "duration": 2.34,
+          "text": "So this is a C program."
+        },
+        {
+          "id": 37,
+          "start": 1163.32,
+          "end": 1168.36,
+          "duration": 5.04,
+          "text": "So argc argument count, argument vector."
+        },
+        {
+          "id": 38,
+          "start": 1168.34,
+          "end": 1175.14,
+          "duration": 6.8,
+          "text": "So here in the text section this program that you type in high level language it will be stored then data."
+        },
+        {
+          "id": 39,
+          "start": 1175.06,
+          "end": 1179.82,
+          "duration": 4.76,
+          "text": "Data section will consist of uninitialized and initialized data."
+        },
+        {
+          "id": 40,
+          "start": 1179.3,
+          "end": 1186.88,
+          "duration": 7.58,
+          "text": "So initialized data when you assign some value to the variable uninitialized when value is not assigned."
+        },
+        {
+          "id": 41,
+          "start": 1186.62,
+          "end": 1196.08,
+          "duration": 9.46,
+          "text": "Then heap so here we are using malloc dynamic memory allocation so that part will be stored in the heap section."
+        },
+        {
+          "id": 42,
+          "start": 1196.1,
+          "end": 1201.66,
+          "duration": 5.56,
+          "text": "Then your stack, stack will contain all the return addresses of the functions, local variables."
+        },
+        {
+          "id": 43,
+          "start": 1202.1,
+          "end": 1204.66,
+          "duration": 2.56,
+          "text": "So all these things will be stored in the stack."
+        },
+        {
+          "id": 44,
+          "start": 1204.62,
+          "end": 1209.68,
+          "duration": 5.06,
+          "text": "So this I think memory layout you have already studied in C. Yes or no?"
+        },
+        {
+          "id": 45,
+          "start": 1214.12,
+          "end": 1215.86,
+          "duration": 1.74,
+          "text": "Next is process state."
+        }
+      ],
+      "boundary_score": 0.18512205282847083
+    },
+    {
+      "topic_id": 3,
+      "start_segment": 46,
+      "end_segment": 74,
+      "start_time": 1215.24,
+      "end_time": 1419.82,
+      "segments": [
+        {
+          "id": 46,
+          "start": 1215.24,
+          "end": 1217.16,
+          "duration": 1.92,
+          "text": "So this is very important."
+        },
+        {
+          "id": 47,
+          "start": 1218.08,
+          "end": 1219.62,
+          "duration": 1.54,
+          "text": "So process is clear to all."
+        },
+        {
+          "id": 48,
+          "start": 1219.26,
+          "end": 1220.54,
+          "duration": 1.28,
+          "text": "What is the process?"
+        },
+        {
+          "id": 49,
+          "start": 1222.72,
+          "end": 1226.08,
+          "duration": 3.36,
+          "text": "Program under execution in the main memory is a process."
+        },
+        {
+          "id": 50,
+          "start": 1226.72,
+          "end": 1236.06,
+          "duration": 9.34,
+          "text": "Now, that process can be in different states at different period of time during their execution life cycle."
+        },
+        {
+          "id": 51,
+          "start": 1236.06,
+          "end": 1246.7,
+          "duration": 10.64,
+          "text": "When process is getting executed, it can be in different stages on the basis of their execution status."
+        },
+        {
+          "id": 52,
+          "start": 1247.7,
+          "end": 1254.08,
+          "duration": 6.38,
+          "text": "So, new state is when process is being created, it is said to be in the new state."
+        },
+        {
+          "id": 53,
+          "start": 1254.98,
+          "end": 1259.36,
+          "duration": 4.38,
+          "text": "Running means instructions are getting executed."
+        },
+        {
+          "id": 54,
+          "start": 1260.04,
+          "end": 1269.76,
+          "duration": 9.72,
+          "text": "Waiting, process is waiting for some event to occur, process is waiting for a resource which can be held by some other device."
+        },
+        {
+          "id": 55,
+          "start": 1270.2,
+          "end": 1278.76,
+          "duration": 8.56,
+          "text": "So, process is waiting for some input output, some resource or some memory access it is waiting for."
+        },
+        {
+          "id": 56,
+          "start": 1278.46,
+          "end": 1288.06,
+          "duration": 9.6,
+          "text": "So, that process cannot complete its execution because it has not received all the resources which are required for its execution."
+        },
+        {
+          "id": 57,
+          "start": 1287.64,
+          "end": 1294.32,
+          "duration": 6.68,
+          "text": "So, that process will be said to be in the ready state."
+        },
+        {
+          "id": 58,
+          "start": 1293.86,
+          "end": 1298.68,
+          "duration": 4.82,
+          "text": "Then terminated, terminated is process has finished its execution."
+        },
+        {
+          "id": 59,
+          "start": 1299.08,
+          "end": 1306.1,
+          "duration": 7.02,
+          "text": "So it has completed its life cycle and this execution of a thread or process is finished."
+        },
+        {
+          "id": 60,
+          "start": 1305.58,
+          "end": 1317.68,
+          "duration": 12.1,
+          "text": "So you can see process is in new state then it will get edited. admitted to the which queue?"
+        },
+        {
+          "id": 61,
+          "start": 1317.68,
+          "end": 1318.32,
+          "duration": 0.64,
+          "text": "Ready queue."
+        },
+        {
+          "id": 62,
+          "start": 1318.32,
+          "end": 1322.86,
+          "duration": 4.54,
+          "text": "Ready queue will contain all the processes which are ready to be executed."
+        },
+        {
+          "id": 63,
+          "start": 1322.86,
+          "end": 1326.9,
+          "duration": 4.04,
+          "text": "So, it will get assigned to the ready queue."
+        },
+        {
+          "id": 64,
+          "start": 1326.9,
+          "end": 1330.04,
+          "duration": 3.14,
+          "text": "Then it will move to the running queue."
+        },
+        {
+          "id": 65,
+          "start": 1330.04,
+          "end": 1334.14,
+          "duration": 4.1,
+          "text": "So, running queue it means process is getting executed."
+        },
+        {
+          "id": 66,
+          "start": 1334.14,
+          "end": 1348.84,
+          "duration": 14.7,
+          "text": "Now, some interrupt came so process will stop its that process execution will be stopped temporarily and it will be moved back to the ready queue again because some interrupt occurred."
+        },
+        {
+          "id": 67,
+          "start": 1349.38,
+          "end": 1369.46,
+          "duration": 20.08,
+          "text": "So it is not able to finish its execution or if it has finished its execution then it is going to terminate stage. if it has to wait for some input output or some event then it will move to the waiting state and then again when it gets that"
+        },
+        {
+          "id": 68,
+          "start": 1369.46,
+          "end": 1378.12,
+          "duration": 8.66,
+          "text": "resource when it gets that input output or when that event is completed it will be moved back to the ready queue again."
+        },
+        {
+          "id": 69,
+          "start": 1379.34,
+          "end": 1384.28,
+          "duration": 4.94,
+          "text": "Please have a look any doubt in this diagram of process state so this is important."
+        },
+        {
+          "id": 70,
+          "start": 1387.52,
+          "end": 1392.68,
+          "duration": 5.16,
+          "text": "What are different states in which a process can be during its life cycle and this is the diagram."
+        },
+        {
+          "id": 71,
+          "start": 1392.5,
+          "end": 1396.02,
+          "duration": 3.52,
+          "text": "First it will be new state then it will go to the ready queue."
+        },
+        {
+          "id": 72,
+          "start": 1395.76,
+          "end": 1405.2,
+          "duration": 9.44,
+          "text": "Then running queue and now if it has to wait for some interrupt if it has to wait for some input output so it will again go back to the waiting queue."
+        },
+        {
+          "id": 73,
+          "start": 1405.0,
+          "end": 1414.34,
+          "duration": 9.34,
+          "text": "Then when that event is finished when it gets the required resource it will again go back to the ready queue."
+        },
+        {
+          "id": 74,
+          "start": 1414.4,
+          "end": 1419.82,
+          "duration": 5.42,
+          "text": "Then from that ready queue it can be assigned to the processor for the execution."
+        }
+      ],
+      "boundary_score": 0.11789125204086302
+    },
+    {
+      "topic_id": 4,
+      "start_segment": 75,
+      "end_segment": 84,
+      "start_time": 1424.7,
+      "end_time": 1516.0,
+      "segments": [
+        {
+          "id": 75,
+          "start": 1424.7,
+          "end": 1429.38,
+          "duration": 4.68,
+          "text": "Just raise your hands if you have understood this concept of process state."
+        },
+        {
+          "id": 76,
+          "start": 1432.1,
+          "end": 1434.08,
+          "duration": 1.98,
+          "text": "Please raise your hands."
+        },
+        {
+          "id": 77,
+          "start": 1433.18,
+          "end": 1437.6,
+          "duration": 4.42,
+          "text": "I will not ask questions just to get the idea."
+        },
+        {
+          "id": 78,
+          "start": 1437.08,
+          "end": 1464.6,
+          "duration": 27.52,
+          "text": "So this is simple only not that much complicated. who have not understood raise your hand you have not understood what what thing you have not understood in this ready ready is the queue which will contain all the processes which are ready to be executed which means they have"
+        },
+        {
+          "id": 79,
+          "start": 1464.6,
+          "end": 1466.8,
+          "duration": 2.2,
+          "text": "got all the resources."
+        },
+        {
+          "id": 80,
+          "start": 1466.78,
+          "end": 1472.94,
+          "duration": 6.16,
+          "text": "So now comes the concept of schedulers which we will be discussing in our upcoming slides."
+        },
+        {
+          "id": 81,
+          "start": 1472.78,
+          "end": 1483.8,
+          "duration": 11.02,
+          "text": "So schedulers are basically responsible for taking a process from the ready queue and allocating it to the CPU for execution."
+        },
+        {
+          "id": 82,
+          "start": 1484.48,
+          "end": 1490.64,
+          "duration": 6.16,
+          "text": "So ready queue is which will contain all the processes which are ready to be executed."
+        },
+        {
+          "id": 83,
+          "start": 1491.18,
+          "end": 1510.26,
+          "duration": 19.08,
+          "text": "Scheduler will select one of the process and assign it to the CPU for execution. running processes in running state it is getting executed by the CPU waiting it has to wait for some resource it has to wait for some interrupt or wait for some input output then it"
+        },
+        {
+          "id": 84,
+          "start": 1510.26,
+          "end": 1516.0,
+          "duration": 5.74,
+          "text": "gets that particular resource or input output again it will be moved to the ready Thank you for"
+        }
+      ],
+      "boundary_score": 0.15311644474665323
+    },
+    {
+      "topic_id": 5,
+      "start_segment": 85,
+      "end_segment": 94,
+      "start_time": 1553.02,
+      "end_time": 1587.86,
+      "segments": [
+        {
+          "id": 85,
+          "start": 1553.02,
+          "end": 1553.66,
+          "duration": 0.64,
+          "text": "block."
+        },
+        {
+          "id": 86,
+          "start": 1554.16,
+          "end": 1556.66,
+          "duration": 2.5,
+          "text": "So, in your class, we have not discussed this."
+        },
+        {
+          "id": 87,
+          "start": 1556.28,
+          "end": 1558.26,
+          "duration": 1.98,
+          "text": "In other class, I have discussed this."
+        },
+        {
+          "id": 88,
+          "start": 1558.94,
+          "end": 1565.04,
+          "duration": 6.1,
+          "text": "So process control block is basically, it is also called as task control block."
+        },
+        {
+          "id": 89,
+          "start": 1564.58,
+          "end": 1570.72,
+          "duration": 6.14,
+          "text": "It will store all the important information related to a process."
+        },
+        {
+          "id": 90,
+          "start": 1572.58,
+          "end": 1575.56,
+          "duration": 2.98,
+          "text": "Now what is the important information that it will store?"
+        },
+        {
+          "id": 91,
+          "start": 1575.08,
+          "end": 1578.6,
+          "duration": 3.52,
+          "text": "Guys stop talking please last bench stop talking."
+        },
+        {
+          "id": 92,
+          "start": 1577.9,
+          "end": 1583.22,
+          "duration": 5.32,
+          "text": "So it is also called as task control block."
+        },
+        {
+          "id": 93,
+          "start": 1583.12,
+          "end": 1585.2,
+          "duration": 2.08,
+          "text": "What information it will store?"
+        },
+        {
+          "id": 94,
+          "start": 1585.64,
+          "end": 1587.86,
+          "duration": 2.22,
+          "text": "It will store the process state."
+        }
+      ],
+      "boundary_score": 0.1413124402364095
+    },
+    {
+      "topic_id": 6,
+      "start_segment": 95,
+      "end_segment": 105,
+      "start_time": 1587.8,
+      "end_time": 1692.6,
+      "segments": [
+        {
+          "id": 95,
+          "start": 1587.8,
+          "end": 1595.1,
+          "duration": 7.3,
+          "text": "So just now we have discussed a process can be in you know different states at different point of time."
+        },
+        {
+          "id": 96,
+          "start": 1594.12,
+          "end": 1597.82,
+          "duration": 3.7,
+          "text": "It can be new state ready running waiting."
+        },
+        {
+          "id": 97,
+          "start": 1597.3,
+          "end": 1603.64,
+          "duration": 6.34,
+          "text": "So this process state field will contain the state of the process. state."
+        },
+        {
+          "id": 98,
+          "start": 1603.64,
+          "end": 1611.06,
+          "duration": 7.42,
+          "text": "Then program counter, so it will contain the address of next instructions to be executed."
+        },
+        {
+          "id": 99,
+          "start": 1611.76,
+          "end": 1624.82,
+          "duration": 13.06,
+          "text": "Then CPU registers which will contain the current instruction which is getting executed data relevant to that data related to that instruction will be stored in the CPU registers."
+        },
+        {
+          "id": 100,
+          "start": 1625.28,
+          "end": 1633.88,
+          "duration": 8.6,
+          "text": "Then CPU scheduling information, so which scheduling algorithm is being used for that particular process execution."
+        },
+        {
+          "id": 101,
+          "start": 1634.38,
+          "end": 1643.52,
+          "duration": 9.14,
+          "text": "So, you will be later you will be learning about different scheduling algorithms which operating system use to execute the processes."
+        },
+        {
+          "id": 102,
+          "start": 1644.02,
+          "end": 1670.32,
+          "duration": 26.3,
+          "text": "Memory management information, how much memory is allocated to a certain process, accounting information, what resources are allocated to different processes in the system, how How many resources are allocated and for how long those resources will be allocated to a particular device or a process."
+        },
+        {
+          "id": 103,
+          "start": 1670.82,
+          "end": 1676.62,
+          "duration": 5.8,
+          "text": "So input output status information, input output devices allocated to a process, list of open files."
+        },
+        {
+          "id": 104,
+          "start": 1677.3,
+          "end": 1680.9,
+          "duration": 3.6,
+          "text": "So list of files which are opened by that particular process."
+        },
+        {
+          "id": 105,
+          "start": 1681.92,
+          "end": 1692.6,
+          "duration": 10.68,
+          "text": "So basically process control block is a database that will store all the necessary and relevant information related to the process."
+        }
+      ],
+      "boundary_score": 0.11992939313252766
+    },
+    {
+      "topic_id": 7,
+      "start_segment": 106,
+      "end_segment": 115,
+      "start_time": 1693.38,
+      "end_time": 1774.1,
+      "segments": [
+        {
+          "id": 106,
+          "start": 1693.38,
+          "end": 1695.22,
+          "duration": 1.84,
+          "text": "What information it will store?"
+        },
+        {
+          "id": 107,
+          "start": 1696.32,
+          "end": 1697.52,
+          "duration": 1.2,
+          "text": "Current state."
+        },
+        {
+          "id": 108,
+          "start": 1701.32,
+          "end": 1702.72,
+          "duration": 1.4,
+          "text": "What happened?"
+        },
+        {
+          "id": 109,
+          "start": 1702.18,
+          "end": 1704.16,
+          "duration": 1.98,
+          "text": "Yes."
+        },
+        {
+          "id": 110,
+          "start": 1705.3,
+          "end": 1706.28,
+          "duration": 0.98,
+          "text": "Any doubt?"
+        },
+        {
+          "id": 111,
+          "start": 1708.0,
+          "end": 1714.16,
+          "duration": 6.16,
+          "text": "Simply we are discussing about process control block also called as task control block."
+        },
+        {
+          "id": 112,
+          "start": 1716.54,
+          "end": 1720.64,
+          "duration": 4.1,
+          "text": "I do not think so this is that much complicated to understand."
+        },
+        {
+          "id": 113,
+          "start": 1723.46,
+          "end": 1748.02,
+          "duration": 24.56,
+          "text": "So it will contain all the necessary information relevant to a process, process state, program counter address of next instruction, CPU registers, that current data and current instruction which is getting executed, scheduling information, what type of scheduling policy is incorporated by the operating system for that particular process."
+        },
+        {
+          "id": 114,
+          "start": 1749.08,
+          "end": 1767.96,
+          "duration": 18.88,
+          "text": "Accounting information, how many resources and which resources allocated to which process and status information input output status information if input output device which was required by the process, it got allocated to the process or not, then list of open files by the process."
+        },
+        {
+          "id": 115,
+          "start": 1769.2,
+          "end": 1774.1,
+          "duration": 4.9,
+          "text": "Now how this PCB is managed by the operating system?"
+        }
+      ],
+      "boundary_score": 0.18395700057347614
+    },
+    {
+      "topic_id": 8,
+      "start_segment": 116,
+      "end_segment": 125,
+      "start_time": 1776.5,
+      "end_time": 1864.02,
+      "segments": [
+        {
+          "id": 116,
+          "start": 1776.5,
+          "end": 1783.44,
+          "duration": 6.94,
+          "text": "So in main memory, operating system will maintain a process table."
+        },
+        {
+          "id": 117,
+          "start": 1784.86,
+          "end": 1789.12,
+          "duration": 4.26,
+          "text": "This process table will consist of two fields."
+        },
+        {
+          "id": 118,
+          "start": 1790.38,
+          "end": 1795.24,
+          "duration": 4.86,
+          "text": "One field will be process id also called as pid."
+        },
+        {
+          "id": 119,
+          "start": 1795.28,
+          "end": 1806.8,
+          "duration": 11.52,
+          "text": "So as I already told for every process when it is being created there will be a unique process id which will get associated to that process."
+        },
+        {
+          "id": 120,
+          "start": 1807.12,
+          "end": 1820.08,
+          "duration": 12.96,
+          "text": "So, in that process table there will be process id corresponding to that there will be a pointer pointing to the process control block of that particular process."
+        },
+        {
+          "id": 121,
+          "start": 1819.5,
+          "end": 1824.96,
+          "duration": 5.46,
+          "text": "So, here you can see this is the process table."
+        },
+        {
+          "id": 122,
+          "start": 1825.94,
+          "end": 1836.08,
+          "duration": 10.14,
+          "text": "First entry is PID, PID is process ID, PCB field will contain the pointer."
+        },
+        {
+          "id": 123,
+          "start": 1837.0,
+          "end": 1845.02,
+          "duration": 8.02,
+          "text": "So, these pointers are pointing to the corresponding process control block of that particular process."
+        },
+        {
+          "id": 124,
+          "start": 1844.8,
+          "end": 1851.4,
+          "duration": 6.6,
+          "text": "So, suppose this process PID is 1, so this will contain the pointer to PCB 1."
+        },
+        {
+          "id": 125,
+          "start": 1852.92,
+          "end": 1864.02,
+          "duration": 11.1,
+          "text": "For process ID 2 pointer will be to PCB 2 for every unique process there will be a unique process control block."
+        }
+      ],
+      "boundary_score": 0.15723939736684162
+    },
+    {
+      "topic_id": 9,
+      "start_segment": 126,
+      "end_segment": 138,
+      "start_time": 1863.8,
+      "end_time": 1978.78,
+      "segments": [
+        {
+          "id": 126,
+          "start": 1863.8,
+          "end": 1868.56,
+          "duration": 4.76,
+          "text": "So now we will also discuss why this PCB is important."
+        },
+        {
+          "id": 127,
+          "start": 1869.24,
+          "end": 1875.28,
+          "duration": 6.04,
+          "text": "So it is important for the operating system to know the current status of the process 2."
+        },
+        {
+          "id": 128,
+          "start": 1874.9,
+          "end": 1886.16,
+          "duration": 11.26,
+          "text": "It should know what is the current state of the process, what resources it is holding now and what resources are required by this process in future, what files are opened by this process."
+        },
+        {
+          "id": 129,
+          "start": 1885.54,
+          "end": 1895.26,
+          "duration": 9.72,
+          "text": "So, all these things should be like managed by the operating system to properly handle that process execution."
+        },
+        {
+          "id": 130,
+          "start": 1895.24,
+          "end": 1901.12,
+          "duration": 5.88,
+          "text": "If that information is not available then context switching will be very difficult."
+        },
+        {
+          "id": 131,
+          "start": 1900.6,
+          "end": 1911.24,
+          "duration": 10.64,
+          "text": "Now what is context switching? switching we will come to it in our next slide after schedulers."
+        },
+        {
+          "id": 132,
+          "start": 1911.0,
+          "end": 1932.6,
+          "duration": 21.6,
+          "text": "So process scheduling I hope PCB is clear to all at least you can respond with yes or no process control block or task control block I know this is your fourth lecture fourth or fifth, fourth."
+        },
+        {
+          "id": 133,
+          "start": 1932.6,
+          "end": 1943.02,
+          "duration": 10.42,
+          "text": "I can understand but we also have to finish our syllabus also."
+        },
+        {
+          "id": 134,
+          "start": 1943.02,
+          "end": 1949.08,
+          "duration": 6.06,
+          "text": "Yes, this is clear, PCB is clear."
+        },
+        {
+          "id": 135,
+          "start": 1949.08,
+          "end": 1951.88,
+          "duration": 2.8,
+          "text": "How it is maintained?"
+        },
+        {
+          "id": 136,
+          "start": 1951.88,
+          "end": 1956.0,
+          "duration": 4.12,
+          "text": "Through a process table."
+        },
+        {
+          "id": 137,
+          "start": 1956.0,
+          "end": 1965.36,
+          "duration": 9.36,
+          "text": "Process table will contain two entries one is process id other is pointer to that process control block."
+        },
+        {
+          "id": 138,
+          "start": 1967.16,
+          "end": 1978.78,
+          "duration": 11.62,
+          "text": "Tomorrow I will ask what important information PCB stores and how operating system manages that PCB."
+        }
+      ],
+      "boundary_score": 0.11521387100219727
+    },
+    {
+      "topic_id": 10,
+      "start_segment": 139,
+      "end_segment": 151,
+      "start_time": 1979.96,
+      "end_time": 2057.82,
+      "segments": [
+        {
+          "id": 139,
+          "start": 1979.96,
+          "end": 1986.74,
+          "duration": 6.78,
+          "text": "So process scheduling, why process scheduling is needed for maximizing CPU use."
+        },
+        {
+          "id": 140,
+          "start": 1988.0,
+          "end": 1990.5,
+          "duration": 2.5,
+          "text": "So process scheduling is clear to all."
+        },
+        {
+          "id": 141,
+          "start": 1993.24,
+          "end": 1995.74,
+          "duration": 2.5,
+          "text": "I have discussed in previous sessions also."
+        },
+        {
+          "id": 142,
+          "start": 1995.02,
+          "end": 1996.64,
+          "duration": 1.62,
+          "text": "What is process scheduling?"
+        },
+        {
+          "id": 143,
+          "start": 1998.32,
+          "end": 2010.52,
+          "duration": 12.2,
+          "text": "When there are multiple processes executing in a system, then operating system needs to decide which process will get executed in what order."
+        },
+        {
+          "id": 144,
+          "start": 2011.78,
+          "end": 2020.06,
+          "duration": 8.28,
+          "text": "So there are certain policies or algorithms to decide the order of the process execution."
+        },
+        {
+          "id": 145,
+          "start": 2020.88,
+          "end": 2025.76,
+          "duration": 4.88,
+          "text": "So, that whole process is called as CPU scheduling."
+        },
+        {
+          "id": 146,
+          "start": 2025.68,
+          "end": 2029.76,
+          "duration": 4.08,
+          "text": "So, why it is important for maximizing CPU use?"
+        },
+        {
+          "id": 147,
+          "start": 2030.14,
+          "end": 2035.54,
+          "duration": 5.4,
+          "text": "Now, who are actually responsible for doing that scheduling?"
+        },
+        {
+          "id": 148,
+          "start": 2035.16,
+          "end": 2036.52,
+          "duration": 1.36,
+          "text": "Process schedulers."
+        },
+        {
+          "id": 149,
+          "start": 2036.16,
+          "end": 2041.32,
+          "duration": 5.16,
+          "text": "So, there are different types of schedulers in the system."
+        },
+        {
+          "id": 150,
+          "start": 2042.38,
+          "end": 2053.44,
+          "duration": 11.06,
+          "text": "No, these schedulers are doing the task or job of scheduling the processes, scheduling how process will get executed, in what order, in what sequence."
+        },
+        {
+          "id": 151,
+          "start": 2053.5,
+          "end": 2057.82,
+          "duration": 4.32,
+          "text": "So, there are different types of..."
+        }
+      ],
+      "boundary_score": 0.22935507694880167
+    },
+    {
+      "topic_id": 11,
+      "start_segment": 152,
+      "end_segment": 161,
+      "start_time": 2057.44,
+      "end_time": 2104.6,
+      "segments": [
+        {
+          "id": 152,
+          "start": 2057.44,
+          "end": 2060.28,
+          "duration": 2.84,
+          "text": "Guys, I will ask you now."
+        },
+        {
+          "id": 153,
+          "start": 2059.82,
+          "end": 2062.66,
+          "duration": 2.84,
+          "text": "Yes, why you people are talking?"
+        },
+        {
+          "id": 154,
+          "start": 2066.16,
+          "end": 2068.52,
+          "duration": 2.36,
+          "text": "Last two benches, yes."
+        },
+        {
+          "id": 155,
+          "start": 2069.74,
+          "end": 2072.24,
+          "duration": 2.5,
+          "text": "Last second and last third."
+        },
+        {
+          "id": 156,
+          "start": 2072.76,
+          "end": 2074.76,
+          "duration": 2.0,
+          "text": "You people are continuously talking."
+        },
+        {
+          "id": 157,
+          "start": 2079.44,
+          "end": 2086.38,
+          "duration": 6.94,
+          "text": "Yes, whatever we have discussed today is it clear to all?"
+        },
+        {
+          "id": 158,
+          "start": 2086.02,
+          "end": 2088.76,
+          "duration": 2.74,
+          "text": "Yes or no?"
+        },
+        {
+          "id": 159,
+          "start": 2088.64,
+          "end": 2093.68,
+          "duration": 5.04,
+          "text": "I want response from these 2-3 lines, this 2-3 disks."
+        },
+        {
+          "id": 160,
+          "start": 2097.24,
+          "end": 2098.12,
+          "duration": 0.88,
+          "text": "It is okay."
+        },
+        {
+          "id": 161,
+          "start": 2097.7,
+          "end": 2104.6,
+          "duration": 6.9,
+          "text": "If you have not understood any concept, you can tell me. PCP clear?"
+        }
+      ],
+      "boundary_score": 0.22583405176798502
+    },
+    {
+      "topic_id": 12,
+      "start_segment": 162,
+      "end_segment": 173,
+      "start_time": 2105.62,
+      "end_time": 2178.96,
+      "segments": [
+        {
+          "id": 162,
+          "start": 2105.62,
+          "end": 2108.3,
+          "duration": 2.68,
+          "text": "And what information it stores that is also clear."
+        },
+        {
+          "id": 163,
+          "start": 2108.3,
+          "end": 2112.58,
+          "duration": 4.28,
+          "text": "How operating system manages it?"
+        },
+        {
+          "id": 164,
+          "start": 2112.34,
+          "end": 2114.84,
+          "duration": 2.5,
+          "text": "Through process table that is also clear."
+        },
+        {
+          "id": 165,
+          "start": 2115.44,
+          "end": 2117.76,
+          "duration": 2.32,
+          "text": "Process scheduling is clear to all."
+        },
+        {
+          "id": 166,
+          "start": 2117.76,
+          "end": 2132.08,
+          "duration": 14.32,
+          "text": "CPU scheduling, when there are multiple processes in the system, how those processes will get executed, in what order, that is decided by the operating system by using CPU scheduling algorithm."
+        },
+        {
+          "id": 167,
+          "start": 2132.08,
+          "end": 2136.58,
+          "duration": 4.5,
+          "text": "So there are different types of scheduling queues which are maintained in a system."
+        },
+        {
+          "id": 168,
+          "start": 2136.58,
+          "end": 2138.54,
+          "duration": 1.96,
+          "text": "First is job queue."
+        },
+        {
+          "id": 169,
+          "start": 2138.54,
+          "end": 2140.12,
+          "duration": 1.58,
+          "text": "What is job queue?"
+        },
+        {
+          "id": 170,
+          "start": 2140.12,
+          "end": 2145.06,
+          "duration": 4.94,
+          "text": "So job queue will contain all the processes in the system."
+        },
+        {
+          "id": 171,
+          "start": 2145.06,
+          "end": 2148.62,
+          "duration": 3.56,
+          "text": "So set of all processes in the system will be stored in job queue."
+        },
+        {
+          "id": 172,
+          "start": 2148.62,
+          "end": 2172.96,
+          "duration": 24.34,
+          "text": "Ready ready queue processes which are ready for the execution will be stored in ready queue device queue which are waiting for some device which are waiting for some input output or resource will be stored in device queue. it out in this."
+        },
+        {
+          "id": 173,
+          "start": 2172.96,
+          "end": 2178.96,
+          "duration": 6.0,
+          "text": "So these are the different cues which will be maintained in the system."
+        }
+      ],
+      "boundary_score": 0.17689299583435059
+    },
+    {
+      "topic_id": 13,
+      "start_segment": 174,
+      "end_segment": 191,
+      "start_time": 2179.92,
+      "end_time": 2312.82,
+      "segments": [
+        {
+          "id": 174,
+          "start": 2179.92,
+          "end": 2186.72,
+          "duration": 6.8,
+          "text": "Now there are two types of processes in the system input output bound and CPU bound processes."
+        },
+        {
+          "id": 175,
+          "start": 2187.46,
+          "end": 2192.62,
+          "duration": 5.16,
+          "text": "So what are input output see when we say that multiple programs are running in the system."
+        },
+        {
+          "id": 176,
+          "start": 2192.86,
+          "end": 2197.22,
+          "duration": 4.36,
+          "text": "So it is not important that all programs will be of same type."
+        },
+        {
+          "id": 177,
+          "start": 2197.22,
+          "end": 2200.46,
+          "duration": 3.24,
+          "text": "So some will be input output bound some will be CPU bound."
+        },
+        {
+          "id": 178,
+          "start": 2200.46,
+          "end": 2211.46,
+          "duration": 11.0,
+          "text": "So CPU bound input output bound processes are which are spending most of the time in doing input output rather than actual execution or computation."
+        },
+        {
+          "id": 179,
+          "start": 2210.78,
+          "end": 2219.54,
+          "duration": 8.76,
+          "text": "So in input output only most of the time is getting utilized or wasted."
+        },
+        {
+          "id": 180,
+          "start": 2219.54,
+          "end": 2231.04,
+          "duration": 11.5,
+          "text": "Because no wasted Because if some instruction is like that, that input output is mandatory for that, then that is getting utilized."
+        },
+        {
+          "id": 181,
+          "start": 2231.86,
+          "end": 2242.3,
+          "duration": 10.44,
+          "text": "But if for that particular process, computation is important, but it is wasting most of the time in input and output only, then we will say it is wasted."
+        },
+        {
+          "id": 182,
+          "start": 2242.56,
+          "end": 2247.94,
+          "duration": 5.38,
+          "text": "So there can be different types of processes on the basis of the process requirement."
+        },
+        {
+          "id": 183,
+          "start": 2247.84,
+          "end": 2252.16,
+          "duration": 4.32,
+          "text": "So input output bound process spends more time doing IO than other computations."
+        },
+        {
+          "id": 184,
+          "start": 2253.0,
+          "end": 2255.6,
+          "duration": 2.6,
+          "text": "It will have shorter CPU burst."
+        },
+        {
+          "id": 185,
+          "start": 2255.48,
+          "end": 2261.06,
+          "duration": 5.58,
+          "text": "So we will also do the algorithm scheduling algorithms in which you will learn what is burst time."
+        },
+        {
+          "id": 186,
+          "start": 2260.82,
+          "end": 2268.84,
+          "duration": 8.02,
+          "text": "So burst time is basically the total time required by the process to complete the execution."
+        },
+        {
+          "id": 187,
+          "start": 2269.3,
+          "end": 2282.08,
+          "duration": 12.78,
+          "text": "So for an input output bound process CPU burst will be shorter or longer, shorter because it is spending more time in input output not in computation."
+        },
+        {
+          "id": 188,
+          "start": 2281.84,
+          "end": 2297.18,
+          "duration": 15.34,
+          "text": "So some of the examples for input output bound processes are reading writing a large file, downloading a file from the internet, large file from the internet or database query involving disk access."
+        },
+        {
+          "id": 189,
+          "start": 2297.98,
+          "end": 2301.38,
+          "duration": 3.4,
+          "text": "So we have already discussed about memory hierarchy."
+        },
+        {
+          "id": 190,
+          "start": 2301.56,
+          "end": 2305.94,
+          "duration": 4.38,
+          "text": "So disk access will be slower as compared to main memory access."
+        },
+        {
+          "id": 191,
+          "start": 2306.6,
+          "end": 2312.82,
+          "duration": 6.22,
+          "text": "So like processes are spending more time in IO, input output rather than execution."
+        }
+      ],
+      "boundary_score": 0.11168650786081949
+    },
+    {
+      "topic_id": 14,
+      "start_segment": 192,
+      "end_segment": 200,
+      "start_time": 2312.54,
+      "end_time": 2356.64,
+      "segments": [
+        {
+          "id": 192,
+          "start": 2312.54,
+          "end": 2316.62,
+          "duration": 4.08,
+          "text": "CPU bound which are spending more time in computation."
+        },
+        {
+          "id": 193,
+          "start": 2316.62,
+          "end": 2319.66,
+          "duration": 3.04,
+          "text": "Some of the examples are image processing."
+        },
+        {
+          "id": 194,
+          "start": 2319.2,
+          "end": 2325.84,
+          "duration": 6.64,
+          "text": "So actually this image processing task, the input output is also, you know it also takes lot of time."
+        },
+        {
+          "id": 195,
+          "start": 2325.66,
+          "end": 2331.06,
+          "duration": 5.4,
+          "text": "When you will be doing all these machine learning projects, deep learning projects, you will learn."
+        },
+        {
+          "id": 196,
+          "start": 2330.82,
+          "end": 2331.48,
+          "duration": 0.66,
+          "text": "Okay."
+        },
+        {
+          "id": 197,
+          "start": 2331.44,
+          "end": 2338.72,
+          "duration": 7.28,
+          "text": "This input and output processing, input processing is also a big task in machine learning based projects."
+        },
+        {
+          "id": 198,
+          "start": 2338.94,
+          "end": 2348.64,
+          "duration": 9.7,
+          "text": "So image processing, scientific computations or scientific simulations, video encoding, video into some digital format."
+        },
+        {
+          "id": 199,
+          "start": 2348.64,
+          "end": 2353.4,
+          "duration": 4.76,
+          "text": "So these types of processes require lot of computation."
+        },
+        {
+          "id": 200,
+          "start": 2353.4,
+          "end": 2356.64,
+          "duration": 3.24,
+          "text": "So these are called as CPU bound processes."
+        }
+      ],
+      "boundary_score": 0.11618622144063313
+    },
+    {
+      "topic_id": 15,
+      "start_segment": 201,
+      "end_segment": 221,
+      "start_time": 2356.64,
+      "end_time": 2484.88,
+      "segments": [
+        {
+          "id": 201,
+          "start": 2356.64,
+          "end": 2362.52,
+          "duration": 5.88,
+          "text": "So for CPU bound processes, CPU burst will be large or short."
+        },
+        {
+          "id": 202,
+          "start": 2362.52,
+          "end": 2365.42,
+          "duration": 2.9,
+          "text": "It will be more."
+        },
+        {
+          "id": 203,
+          "start": 2365.42,
+          "end": 2367.12,
+          "duration": 1.7,
+          "text": "CPU burst time will be more."
+        },
+        {
+          "id": 204,
+          "start": 2367.12,
+          "end": 2372.16,
+          "duration": 5.04,
+          "text": "For input output bound, CPU burst time will be less."
+        },
+        {
+          "id": 205,
+          "start": 2375.04,
+          "end": 2379.58,
+          "duration": 4.54,
+          "text": "So I hope this is clear input-output bound processes, CPU bound processes."
+        },
+        {
+          "id": 206,
+          "start": 2381.06,
+          "end": 2393.8,
+          "duration": 12.74,
+          "text": "So these examples I have added for your understanding. of process scheduling."
+        },
+        {
+          "id": 207,
+          "start": 2393.8,
+          "end": 2406.14,
+          "duration": 12.34,
+          "text": "ReadyQ will maintain all the processes which are ready to execute CPU."
+        },
+        {
+          "id": 208,
+          "start": 2406.14,
+          "end": 2410.46,
+          "duration": 4.32,
+          "text": "That process will be one of the process will get selected from the readyQ."
+        },
+        {
+          "id": 209,
+          "start": 2410.46,
+          "end": 2414.2,
+          "duration": 3.74,
+          "text": "It will be allocated to the CPU for the execution."
+        },
+        {
+          "id": 210,
+          "start": 2415.06,
+          "end": 2423.14,
+          "duration": 8.08,
+          "text": "Now sometimes what happens it is not mandatory that once the process gets allocated to CPU it will complete its execution."
+        },
+        {
+          "id": 211,
+          "start": 2423.18,
+          "end": 2425.16,
+          "duration": 1.98,
+          "text": "It is not necessary."
+        },
+        {
+          "id": 212,
+          "start": 2424.18,
+          "end": 2434.32,
+          "duration": 10.14,
+          "text": "So there are certain scenarios in which a process has to temporarily pause its execution."
+        },
+        {
+          "id": 213,
+          "start": 2434.8,
+          "end": 2441.22,
+          "duration": 6.42,
+          "text": "So what can be those conditions due to some IO request, some input output request."
+        },
+        {
+          "id": 214,
+          "start": 2442.04,
+          "end": 2445.3,
+          "duration": 3.26,
+          "text": "So process will not be able to complete the execution."
+        },
+        {
+          "id": 215,
+          "start": 2445.8,
+          "end": 2449.28,
+          "duration": 3.48,
+          "text": "It will go to input output wait queue."
+        },
+        {
+          "id": 216,
+          "start": 2448.46,
+          "end": 2454.98,
+          "duration": 6.52,
+          "text": "It gets the resource then it will be allocated to ready queue again."
+        },
+        {
+          "id": 217,
+          "start": 2454.5,
+          "end": 2463.48,
+          "duration": 8.98,
+          "text": "Another one is time slice expired So that every process gets a fair share of CPU time."
+        },
+        {
+          "id": 218,
+          "start": 2463.48,
+          "end": 2467.66,
+          "duration": 4.18,
+          "text": "Timers can be implemented by the operating system."
+        },
+        {
+          "id": 219,
+          "start": 2467.66,
+          "end": 2472.74,
+          "duration": 5.08,
+          "text": "So suppose a process can execute for 5 milliseconds only."
+        },
+        {
+          "id": 220,
+          "start": 2472.74,
+          "end": 2476.2,
+          "duration": 3.46,
+          "text": "So it will get executed for 5 milliseconds."
+        },
+        {
+          "id": 221,
+          "start": 2476.2,
+          "end": 2484.88,
+          "duration": 8.68,
+          "text": "Then it will get terminated temporarily and it has to go to the ready."
+        }
+      ],
+      "boundary_score": 0.09628623723983763
+    },
+    {
+      "topic_id": 16,
+      "start_segment": 222,
+      "end_segment": 232,
+      "start_time": 2484.44,
+      "end_time": 2564.54,
+      "segments": [
+        {
+          "id": 222,
+          "start": 2484.44,
+          "end": 2493.6,
+          "duration": 9.16,
+          "text": "When the time flies again it will get the time flies for execution of that particular instruction then it will be allocated to CPU again."
+        },
+        {
+          "id": 223,
+          "start": 2494.94,
+          "end": 2496.78,
+          "duration": 1.84,
+          "text": "Then create child process."
+        },
+        {
+          "id": 224,
+          "start": 2497.34,
+          "end": 2501.14,
+          "duration": 3.8,
+          "text": "Suppose a parent process has created a child process."
+        },
+        {
+          "id": 225,
+          "start": 2501.82,
+          "end": 2510.18,
+          "duration": 8.36,
+          "text": "Now it has to wait for the child process to finish its execution then only it can finish its execution."
+        },
+        {
+          "id": 226,
+          "start": 2509.56,
+          "end": 2522.52,
+          "duration": 12.96,
+          "text": "So that also whole concept is there for you know how child process was created, what system calls are used to get the status of the child and how that child and parent should be terminated in a safe mode."
+        },
+        {
+          "id": 227,
+          "start": 2521.9,
+          "end": 2536.18,
+          "duration": 14.28,
+          "text": "So all those system calls we will discuss. will do the programs also for creating child processes and how execution is execution of child process and parent process happens."
+        },
+        {
+          "id": 228,
+          "start": 2535.38,
+          "end": 2540.2,
+          "duration": 4.82,
+          "text": "So there are so we will discuss this in detail in unit one only."
+        },
+        {
+          "id": 229,
+          "start": 2542.22,
+          "end": 2544.6,
+          "duration": 2.38,
+          "text": "Another one is wait for an interrupt."
+        },
+        {
+          "id": 230,
+          "start": 2544.3,
+          "end": 2549.98,
+          "duration": 5.68,
+          "text": "So one instruction is getting executed one process is getting executed."
+        },
+        {
+          "id": 231,
+          "start": 2549.04,
+          "end": 2553.56,
+          "duration": 4.52,
+          "text": "Now it has to wait for an interrupt to be handled by the CPU."
+        },
+        {
+          "id": 232,
+          "start": 2554.3,
+          "end": 2564.54,
+          "duration": 10.24,
+          "text": "So its execution will be stopped and then again it will be moved to the ready queue when it is now ready to execute."
+        }
+      ],
+      "boundary_score": 0.10403390725453694
+    },
+    {
+      "topic_id": 17,
+      "start_segment": 233,
+      "end_segment": 245,
+      "start_time": 2564.06,
+      "end_time": 2643.54,
+      "segments": [
+        {
+          "id": 233,
+          "start": 2564.06,
+          "end": 2586.62,
+          "duration": 22.56,
+          "text": "So now when again it will come suppose there is a program P1 it has 10 instructions, 5 instructions got executed then it had to terminate temporarily due to these reasons due to some IO request due to time flies expired, due to child process execution or due to an"
+        },
+        {
+          "id": 234,
+          "start": 2586.62,
+          "end": 2587.32,
+          "duration": 0.7,
+          "text": "interrupt."
+        },
+        {
+          "id": 235,
+          "start": 2587.86,
+          "end": 2589.84,
+          "duration": 1.98,
+          "text": "Again it will go to the ready queue."
+        },
+        {
+          "id": 236,
+          "start": 2590.4,
+          "end": 2595.94,
+          "duration": 5.54,
+          "text": "Now CPU will execute that process from beginning or from instruction set."
+        },
+        {
+          "id": 237,
+          "start": 2601.7,
+          "end": 2604.74,
+          "duration": 3.04,
+          "text": "So it was terminated temporarily."
+        },
+        {
+          "id": 238,
+          "start": 2607.16,
+          "end": 2609.88,
+          "duration": 2.72,
+          "text": "5 instructions got executed previously."
+        },
+        {
+          "id": 239,
+          "start": 2609.88,
+          "end": 2617.64,
+          "duration": 7.76,
+          "text": "Now due to these events it had to terminate or pause temporarily."
+        },
+        {
+          "id": 240,
+          "start": 2617.64,
+          "end": 2619.82,
+          "duration": 2.18,
+          "text": "Then again it will move to the ready queue."
+        },
+        {
+          "id": 241,
+          "start": 2619.82,
+          "end": 2622.74,
+          "duration": 2.92,
+          "text": "Again it will get allocated to the CPU."
+        },
+        {
+          "id": 242,
+          "start": 2622.74,
+          "end": 2630.38,
+          "duration": 7.64,
+          "text": "Now CPU will start its execution from the beginning or from the previous state."
+        },
+        {
+          "id": 243,
+          "start": 2631.96,
+          "end": 2637.66,
+          "duration": 5.7,
+          "text": "So it will not start the execution of that process from the beginning now."
+        },
+        {
+          "id": 244,
+          "start": 2637.66,
+          "end": 2640.88,
+          "duration": 3.22,
+          "text": "So that how it happens?"
+        },
+        {
+          "id": 245,
+          "start": 2640.88,
+          "end": 2643.54,
+          "duration": 2.66,
+          "text": "It happens through context switching."
+        }
+      ],
+      "boundary_score": 0.1840100089708964
+    },
+    {
+      "topic_id": 18,
+      "start_segment": 246,
+      "end_segment": 260,
+      "start_time": 2643.54,
+      "end_time": 2747.48,
+      "segments": [
+        {
+          "id": 246,
+          "start": 2643.54,
+          "end": 2656.36,
+          "duration": 12.82,
+          "text": "So context switch also we will discuss in this slide context switching."
+        },
+        {
+          "id": 247,
+          "start": 2656.12,
+          "end": 2675.04,
+          "duration": 18.92,
+          "text": "Now schedulers so we are talking about scheduling and now I have already told schedulers are the main devices which are actually performing this task of scheduling the jobs, scheduling the processes so that they can complete their execution in some particular order."
+        },
+        {
+          "id": 248,
+          "start": 2675.78,
+          "end": 2679.14,
+          "duration": 3.36,
+          "text": "So we have three types of schedulers in the system."
+        },
+        {
+          "id": 249,
+          "start": 2680.26,
+          "end": 2685.16,
+          "duration": 4.9,
+          "text": "First and most important is short term schedulers."
+        },
+        {
+          "id": 250,
+          "start": 2684.64,
+          "end": 2690.44,
+          "duration": 5.8,
+          "text": "So these short term schedulers are also called as CPU schedulers."
+        },
+        {
+          "id": 251,
+          "start": 2691.2,
+          "end": 2695.2,
+          "duration": 4.0,
+          "text": "So what is the job of a short term or CPU scheduler?"
+        },
+        {
+          "id": 252,
+          "start": 2696.96,
+          "end": 2698.96,
+          "duration": 2.0,
+          "text": "Ready queue is clear to all."
+        },
+        {
+          "id": 253,
+          "start": 2698.52,
+          "end": 2702.6,
+          "duration": 4.08,
+          "text": "Ready queue will contain the processes which are ready to execute."
+        },
+        {
+          "id": 254,
+          "start": 2703.24,
+          "end": 2716.18,
+          "duration": 12.94,
+          "text": "So short term scheduler or CPU scheduler will take one of the process from the ready queue and it will allocate that process to the CPU for the execution."
+        },
+        {
+          "id": 255,
+          "start": 2716.22,
+          "end": 2728.78,
+          "duration": 12.56,
+          "text": "So it is the job of short term scheduler or CPU scheduler to select one process from the ready queue and allocate it to CPU for execution."
+        },
+        {
+          "id": 256,
+          "start": 2729.54,
+          "end": 2734.0,
+          "duration": 4.46,
+          "text": "So, this short term scheduler is invoked frequently every millisecond."
+        },
+        {
+          "id": 257,
+          "start": 2734.46,
+          "end": 2737.84,
+          "duration": 3.38,
+          "text": "So, every millisecond there is some instruction to be executed."
+        },
+        {
+          "id": 258,
+          "start": 2737.08,
+          "end": 2739.94,
+          "duration": 2.86,
+          "text": "So, it will select that instruction."
+        },
+        {
+          "id": 259,
+          "start": 2739.5,
+          "end": 2742.72,
+          "duration": 3.22,
+          "text": "It will allocate it to the CPU."
+        },
+        {
+          "id": 260,
+          "start": 2743.6,
+          "end": 2747.48,
+          "duration": 3.88,
+          "text": "Next is long term scheduler."
+        }
+      ],
+      "boundary_score": 0.10680770874023438
+    },
+    {
+      "topic_id": 19,
+      "start_segment": 261,
+      "end_segment": 286,
+      "start_time": 2747.24,
+      "end_time": 2971.54,
+      "segments": [
+        {
+          "id": 261,
+          "start": 2747.24,
+          "end": 2751.56,
+          "duration": 4.32,
+          "text": "Long term scheduler also called as job scheduler."
+        },
+        {
+          "id": 262,
+          "start": 2752.18,
+          "end": 2758.36,
+          "duration": 6.18,
+          "text": "Now main task of long term scheduler is to control the degree of multiprogramming."
+        },
+        {
+          "id": 263,
+          "start": 2760.36,
+          "end": 2764.9,
+          "duration": 4.54,
+          "text": "Multiprogramming is when multiple programs are getting executed."
+        },
+        {
+          "id": 264,
+          "start": 2764.42,
+          "end": 2776.4,
+          "duration": 11.98,
+          "text": "So this is the responsibility of long term scheduler to select which process should be brought back to main memory from the secondary memory."
+        },
+        {
+          "id": 265,
+          "start": 2777.12,
+          "end": 2795.64,
+          "duration": 18.52,
+          "text": "So we have discussed in the morning the programs which are not ready for execution will be stored to secondary memory and then it will be swap that is called as swap out then that process will be swapped into the main memory when they get ready for the execution."
+        },
+        {
+          "id": 266,
+          "start": 2795.22,
+          "end": 2798.42,
+          "duration": 3.2,
+          "text": "This whole process is called swapping."
+        },
+        {
+          "id": 267,
+          "start": 2798.66,
+          "end": 2805.96,
+          "duration": 7.3,
+          "text": "Now who is actually performing that bringing back that process from secondary to main memory long term schedulers."
+        },
+        {
+          "id": 268,
+          "start": 2806.5,
+          "end": 2815.26,
+          "duration": 8.76,
+          "text": "So your long term schedulers are responsible for bringing the process back to the memory when it is ready for the execution."
+        },
+        {
+          "id": 269,
+          "start": 2816.54,
+          "end": 2825.08,
+          "duration": 8.54,
+          "text": "Long term schedulers are invoked infrequently every second every minute and these are also slow as compared to short term schedulers."
+        },
+        {
+          "id": 270,
+          "start": 2825.38,
+          "end": 2830.78,
+          "duration": 5.4,
+          "text": "So these are controlling short long term schedulers controls the degree of multi programming."
+        },
+        {
+          "id": 271,
+          "start": 2830.76,
+          "end": 2837.36,
+          "duration": 6.6,
+          "text": "So it will decide how many processes should be there in the main memory at a particular time."
+        },
+        {
+          "id": 272,
+          "start": 2839.7,
+          "end": 2842.12,
+          "duration": 2.42,
+          "text": "Then we have medium term scheduler."
+        },
+        {
+          "id": 273,
+          "start": 2842.36,
+          "end": 2847.3,
+          "duration": 4.94,
+          "text": "So long term scheduler is basically controlling the degree of multiprogramming."
+        },
+        {
+          "id": 274,
+          "start": 2847.82,
+          "end": 2855.86,
+          "duration": 8.04,
+          "text": "Now system wants to decrease the degree of multiprogramming then medium term schedulers will be used."
+        },
+        {
+          "id": 275,
+          "start": 2856.68,
+          "end": 2863.44,
+          "duration": 6.76,
+          "text": "So medium term scheduler what it will do suppose some process is getting executed."
+        },
+        {
+          "id": 276,
+          "start": 2863.36,
+          "end": 2874.18,
+          "duration": 10.82,
+          "text": "It can temporarily force that process because of some other event, because of some interrupt, because of some other requirement."
+        },
+        {
+          "id": 277,
+          "start": 2873.74,
+          "end": 2885.2,
+          "duration": 11.46,
+          "text": "Then it will swap out that process from the main memory and it will store that process into secondary memory."
+        },
+        {
+          "id": 278,
+          "start": 2885.78,
+          "end": 2892.9,
+          "duration": 7.12,
+          "text": "And then when that process becomes ready for execution again it will bring back that particular process to main memory."
+        },
+        {
+          "id": 279,
+          "start": 2892.92,
+          "end": 2898.1,
+          "duration": 5.18,
+          "text": "So this is to decrease the degree of multi programming medium term schedulers are used."
+        },
+        {
+          "id": 280,
+          "start": 2897.52,
+          "end": 2901.88,
+          "duration": 4.36,
+          "text": "So medium term and long term are closely related to each other."
+        },
+        {
+          "id": 281,
+          "start": 2903.64,
+          "end": 2909.04,
+          "duration": 5.4,
+          "text": "So medium term can be added if degree of multiple programming needs to decrease."
+        },
+        {
+          "id": 282,
+          "start": 2909.0,
+          "end": 2915.72,
+          "duration": 6.72,
+          "text": "So remove process from memory, store on disk, bring back in from disk to continue execution."
+        },
+        {
+          "id": 283,
+          "start": 2916.08,
+          "end": 2936.32,
+          "duration": 20.24,
+          "text": "So, these 3 schedulers are clear to all short term, long term, medium term, short term also called as CPU scheduler which will select one of the process from the ready queue allocated to CPU for execution."
+        },
+        {
+          "id": 284,
+          "start": 2936.44,
+          "end": 2949.54,
+          "duration": 13.1,
+          "text": "Long term to control the degree of multi programming it will decide which program which program should be or process should be moved from secondary to main memory medium term to decrease the degree of multi programming."
+        },
+        {
+          "id": 285,
+          "start": 2949.3,
+          "end": 2959.62,
+          "duration": 10.32,
+          "text": "So it can select one of the process, it can terminate its execution, it can store it back to the secondary memory and then bring it back when it is ready for the execution."
+        },
+        {
+          "id": 286,
+          "start": 2966.62,
+          "end": 2971.54,
+          "duration": 4.92,
+          "text": "So this is what we were discussing context switching."
+        }
+      ],
+      "boundary_score": 0.1931188901265462
+    },
+    {
+      "topic_id": 20,
+      "start_segment": 287,
+      "end_segment": 304,
+      "start_time": 2973.0,
+      "end_time": 3060.12,
+      "segments": [
+        {
+          "id": 287,
+          "start": 2973.0,
+          "end": 2979.82,
+          "duration": 6.82,
+          "text": "So that whole process is clear to you when CPU is executing suppose CPU is yes last when I will ask you now."
+        },
+        {
+          "id": 288,
+          "start": 2980.32,
+          "end": 2983.32,
+          "duration": 3.0,
+          "text": "So suppose CPU is executing process P0."
+        },
+        {
+          "id": 289,
+          "start": 2984.3,
+          "end": 2989.78,
+          "duration": 5.48,
+          "text": "Now an interrupt comes interrupt is process P1."
+        },
+        {
+          "id": 290,
+          "start": 2989.44,
+          "end": 2995.3,
+          "duration": 5.86,
+          "text": "So now CPU needs to handle that interrupt related to process P1."
+        },
+        {
+          "id": 291,
+          "start": 2994.62,
+          "end": 2997.04,
+          "duration": 2.42,
+          "text": "So what CPU will do?"
+        },
+        {
+          "id": 292,
+          "start": 2997.04,
+          "end": 3007.68,
+          "duration": 10.64,
+          "text": "It will save the current state of the process P0 in its process control block PCB."
+        },
+        {
+          "id": 293,
+          "start": 3008.3,
+          "end": 3012.6,
+          "duration": 4.3,
+          "text": "So state of P0 will be saved in PCB0."
+        },
+        {
+          "id": 294,
+          "start": 3013.34,
+          "end": 3015.98,
+          "duration": 2.64,
+          "text": "Now CPU will move to process P1."
+        },
+        {
+          "id": 295,
+          "start": 3017.12,
+          "end": 3020.46,
+          "duration": 3.34,
+          "text": "It will start handling that interrupt."
+        },
+        {
+          "id": 296,
+          "start": 3020.36,
+          "end": 3027.0,
+          "duration": 6.64,
+          "text": "For that it has to load the current state of P1 from PCB1."
+        },
+        {
+          "id": 297,
+          "start": 3027.66,
+          "end": 3031.42,
+          "duration": 3.76,
+          "text": "Because for every process there will be a PCB process control block."
+        },
+        {
+          "id": 298,
+          "start": 3032.12,
+          "end": 3038.36,
+          "duration": 6.24,
+          "text": "So previously it was executing P0 it will save the current state of P0 in PCB."
+        },
+        {
+          "id": 299,
+          "start": 3037.86,
+          "end": 3041.86,
+          "duration": 4.0,
+          "text": "Now P1 came through an interrupt."
+        },
+        {
+          "id": 300,
+          "start": 3041.34,
+          "end": 3044.7,
+          "duration": 3.36,
+          "text": "Now CPU has to load the state of P1."
+        },
+        {
+          "id": 301,
+          "start": 3044.98,
+          "end": 3046.98,
+          "duration": 2.0,
+          "text": "It will handle that interrupt."
+        },
+        {
+          "id": 302,
+          "start": 3046.9,
+          "end": 3049.2,
+          "duration": 2.3,
+          "text": "It will complete that execution."
+        },
+        {
+          "id": 303,
+          "start": 3049.54,
+          "end": 3053.84,
+          "duration": 4.3,
+          "text": "It will save that current state of P1 now in PCB1."
+        },
+        {
+          "id": 304,
+          "start": 3054.7,
+          "end": 3060.12,
+          "duration": 5.42,
+          "text": "Now it has to move back to the previous process which it was executing which is P0."
+        }
+      ],
+      "boundary_score": 0.11762891213099161
+    },
+    {
+      "topic_id": 21,
+      "start_segment": 305,
+      "end_segment": 318,
+      "start_time": 3060.92,
+      "end_time": 3174.02,
+      "segments": [
+        {
+          "id": 305,
+          "start": 3060.92,
+          "end": 3066.2,
+          "duration": 5.28,
+          "text": "So again it will reload the state of P0 from PCB0."
+        },
+        {
+          "id": 306,
+          "start": 3066.76,
+          "end": 3080.2,
+          "duration": 13.44,
+          "text": "So this process of reloading the state of the older process and loading the state of the new process is called as context switching."
+        },
+        {
+          "id": 307,
+          "start": 3081.94,
+          "end": 3091.38,
+          "duration": 9.44,
+          "text": "So in the while CPU is doing that context switching it is not doing any useful task."
+        },
+        {
+          "id": 308,
+          "start": 3091.72,
+          "end": 3093.52,
+          "duration": 1.8,
+          "text": "What it is doing?"
+        },
+        {
+          "id": 309,
+          "start": 3092.54,
+          "end": 3096.3,
+          "duration": 3.76,
+          "text": "It is saving the state of the current process."
+        },
+        {
+          "id": 310,
+          "start": 3096.06,
+          "end": 3102.72,
+          "duration": 6.66,
+          "text": "Then it is loading the state of the new process but it is not doing any actual execution."
+        },
+        {
+          "id": 311,
+          "start": 3102.46,
+          "end": 3108.58,
+          "duration": 6.12,
+          "text": "So that context switch time is basically the time when CPU is sitting idle."
+        },
+        {
+          "id": 312,
+          "start": 3110.24,
+          "end": 3117.36,
+          "duration": 7.12,
+          "text": "So, you can see process P0 interrupt comes it has to save the state into PCB0."
+        },
+        {
+          "id": 313,
+          "start": 3117.96,
+          "end": 3123.82,
+          "duration": 5.86,
+          "text": "PCB0 is what is PCB0?"
+        },
+        {
+          "id": 314,
+          "start": 3123.82,
+          "end": 3127.78,
+          "duration": 3.96,
+          "text": "Process control block for P0 process."
+        },
+        {
+          "id": 315,
+          "start": 3127.78,
+          "end": 3144.22,
+          "duration": 16.44,
+          "text": "Then it has to reload the state from PCB 1 that is for process 1 it will execute the interrupt but in this time when it was doing this context switching it was sitting idle it was not doing any useful computation."
+        },
+        {
+          "id": 316,
+          "start": 3144.7,
+          "end": 3153.86,
+          "duration": 9.16,
+          "text": "Then it will save state for P1 into PCB 1 reload the state from PCB 0 because it has to resume the execution of the previous process."
+        },
+        {
+          "id": 317,
+          "start": 3153.54,
+          "end": 3165.28,
+          "duration": 11.74,
+          "text": "So for this time also when it is saving the current state of the process reloading the state of the older process then also it will be sitting idle."
+        },
+        {
+          "id": 318,
+          "start": 3165.08,
+          "end": 3174.02,
+          "duration": 8.94,
+          "text": "So this context switching time you can see context of a process is represented in process control block."
+        }
+      ],
+      "boundary_score": 0.1630793809890747
+    },
+    {
+      "topic_id": 22,
+      "start_segment": 319,
+      "end_segment": 339,
+      "start_time": 3173.48,
+      "end_time": 3354.62,
+      "segments": [
+        {
+          "id": 319,
+          "start": 3173.48,
+          "end": 3180.68,
+          "duration": 7.2,
+          "text": "So this is why PCBs are important because PCB will store the current state of the process."
+        },
+        {
+          "id": 320,
+          "start": 3180.6,
+          "end": 3186.2,
+          "duration": 5.6,
+          "text": "Now this context switch time depends on the hardware support."
+        },
+        {
+          "id": 321,
+          "start": 3186.18,
+          "end": 3197.42,
+          "duration": 11.24,
+          "text": "So what is the efficient utilization of CPU that this context switch time should be minimum."
+        },
+        {
+          "id": 322,
+          "start": 3197.88,
+          "end": 3202.04,
+          "duration": 4.16,
+          "text": "The time when CPU is sitting idle should be minimum."
+        },
+        {
+          "id": 323,
+          "start": 3203.34,
+          "end": 3207.56,
+          "duration": 4.22,
+          "text": "So this context switching time depends on the hardware support."
+        },
+        {
+          "id": 324,
+          "start": 3208.24,
+          "end": 3218.56,
+          "duration": 10.32,
+          "text": "Some hardware provides multiple set of registers per CPU which allows CPU to load multiple contexts at a time."
+        },
+        {
+          "id": 325,
+          "start": 3219.88,
+          "end": 3237.86,
+          "duration": 17.98,
+          "text": "So when CPU can load multiple contexts at the same time then obviously that context switching time will reduce, the time when CPU is sitting idle will be reduced and it will maximize CPU utilization."
+        },
+        {
+          "id": 326,
+          "start": 3242.26,
+          "end": 3243.12,
+          "duration": 0.86,
+          "text": "Clear?"
+        },
+        {
+          "id": 327,
+          "start": 3243.06,
+          "end": 3244.08,
+          "duration": 1.02,
+          "text": "Contact switching is clear?"
+        },
+        {
+          "id": 328,
+          "start": 3251.94,
+          "end": 3256.96,
+          "duration": 5.02,
+          "text": "So today we discussed some important topics."
+        },
+        {
+          "id": 329,
+          "start": 3256.44,
+          "end": 3261.36,
+          "duration": 4.92,
+          "text": "So one is you should know that process state it is important."
+        },
+        {
+          "id": 330,
+          "start": 3261.28,
+          "end": 3267.6,
+          "duration": 6.32,
+          "text": "How process is switching from one state to another during its execution life cycle that is important."
+        },
+        {
+          "id": 331,
+          "start": 3267.14,
+          "end": 3284.36,
+          "duration": 17.22,
+          "text": "Then we discussed about PCB or process control block, what information this PCB will store, managed by the operating system, what is the process table, all these things are important."
+        },
+        {
+          "id": 332,
+          "start": 3284.58,
+          "end": 3306.1,
+          "duration": 21.52,
+          "text": "Then scheduler, types of schedulers, short term, long term, medium term, this is also important and how this whole scheduling process works that also we discussed, what is ready Q, what is weight Q, so these all things we discussed."
+        },
+        {
+          "id": 333,
+          "start": 3305.6,
+          "end": 3311.26,
+          "duration": 5.66,
+          "text": "So process will keep on moving between these Q during their execution life cycle."
+        },
+        {
+          "id": 334,
+          "start": 3311.66,
+          "end": 3314.8,
+          "duration": 3.14,
+          "text": "Then we discussed about context switching."
+        },
+        {
+          "id": 335,
+          "start": 3315.08,
+          "end": 3323.32,
+          "duration": 8.24,
+          "text": "So context switching is saving the state of the current process and loading the state of the new process."
+        },
+        {
+          "id": 336,
+          "start": 3323.01,
+          "end": 3330.41,
+          "duration": 7.4,
+          "text": "So during that context switch time CPU is sitting idle not doing any useful computation."
+        },
+        {
+          "id": 337,
+          "start": 3330.64,
+          "end": 3334.36,
+          "duration": 3.72,
+          "text": "So how it can be improved through hardware."
+        },
+        {
+          "id": 338,
+          "start": 3335.3,
+          "end": 3346.08,
+          "duration": 10.78,
+          "text": "So for some systems CPU comes with more registers which helps to accommodate more context process contacts at a time."
+        },
+        {
+          "id": 339,
+          "start": 3346.08,
+          "end": 3354.62,
+          "duration": 8.54,
+          "text": "So which will lead to lesser contact switching time and maximize the CPU utilization."
+        }
+      ],
+      "boundary_score": 0.21044216553370157
+    },
+    {
+      "topic_id": 23,
+      "start_segment": 340,
+      "end_segment": 356,
+      "start_time": 3354.62,
+      "end_time": 3457.89,
+      "segments": [
+        {
+          "id": 340,
+          "start": 3354.62,
+          "end": 3358.6,
+          "duration": 3.98,
+          "text": "So all these things I will ask on Monday."
+        },
+        {
+          "id": 341,
+          "start": 3358.6,
+          "end": 3363.88,
+          "duration": 5.28,
+          "text": "Please check your Passive Academy portal, Passive portal."
+        },
+        {
+          "id": 342,
+          "start": 3363.88,
+          "end": 3367.28,
+          "duration": 3.4,
+          "text": "Check whether all content is uploaded or not."
+        },
+        {
+          "id": 343,
+          "start": 3367.28,
+          "end": 3369.22,
+          "duration": 1.94,
+          "text": "Let me know."
+        },
+        {
+          "id": 344,
+          "start": 3369.2,
+          "end": 3377.16,
+          "duration": 7.96,
+          "text": "I will convey it to the anchor faculty."
+        },
+        {
+          "id": 345,
+          "start": 3376.84,
+          "end": 3381.03,
+          "duration": 4.2,
+          "text": "So now that evaluation policy should also be clear to you."
+        },
+        {
+          "id": 346,
+          "start": 3380.97,
+          "end": 3390.32,
+          "duration": 9.34,
+          "text": "30 marks from ISAs, 20 marks from your assignments that job problem, experiential learning."
+        },
+        {
+          "id": 347,
+          "start": 3390.91,
+          "end": 3397.78,
+          "duration": 6.86,
+          "text": "And that is actually getting conducted for 75 marks which will be scaled down to 20."
+        },
+        {
+          "id": 348,
+          "start": 3398.1,
+          "end": 3410.99,
+          "duration": 12.9,
+          "text": "So all those things will be shared to you through PESO Academy please check."
+        },
+        {
+          "id": 349,
+          "start": 3410.8,
+          "end": 3418.93,
+          "duration": 8.13,
+          "text": "And please let me know if any doubt in any of the topic which we have discussed in this week then let me know on Monday."
+        },
+        {
+          "id": 350,
+          "start": 3418.93,
+          "end": 3425.69,
+          "duration": 6.76,
+          "text": "We can I will repeat that topic and on Monday please bring your laptop."
+        },
+        {
+          "id": 351,
+          "start": 3425.69,
+          "end": 3428.79,
+          "duration": 3.1,
+          "text": "We have our first hands on session."
+        },
+        {
+          "id": 352,
+          "start": 3428.79,
+          "end": 3434.63,
+          "duration": 5.84,
+          "text": "So where we will be executing our basic unix linux commands."
+        },
+        {
+          "id": 353,
+          "start": 3435.45,
+          "end": 3448.35,
+          "duration": 12.9,
+          "text": "So, all of you have that virtual box also you can have in your systems and you can execute linux or unix commands or through WSL also you can execute."
+        },
+        {
+          "id": 354,
+          "start": 3447.49,
+          "end": 3450.87,
+          "duration": 3.38,
+          "text": "So, I will share that file with you."
+        },
+        {
+          "id": 355,
+          "start": 3450.63,
+          "end": 3453.65,
+          "duration": 3.02,
+          "text": "Saturday, Sunday you can install that."
+        },
+        {
+          "id": 356,
+          "start": 3455.15,
+          "end": 3457.89,
+          "duration": 2.74,
+          "text": "Monday bring your laptops for hands on"
+        }
+      ],
+      "boundary_score": null
+    }
+  ]
+}

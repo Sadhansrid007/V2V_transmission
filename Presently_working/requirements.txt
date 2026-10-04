@@ -1,0 +1,11 @@
+sentence-transformers
+chromadb
+scipy
+numpy
+matplotlib
+groq
+pydantic
+python-dotenv
+torch
+pydub
+silero-vad

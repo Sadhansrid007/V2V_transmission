@@ -1,0 +1,21 @@
+{
+  "dd68ca631f44dd26": {
+    "segmentation": {
+      "transcript_hash": "610bc77c235fd4cd7c0e2dd999d66cdf94f1fe401b84e232f08eed8f669e4ea8",
+      "config_snapshot": {
+        "EMBEDDING_MODEL": "BAAI/bge-m3",
+        "EMBEDDING_BATCH_SIZE": 32,
+        "WINDOW_SIZE": 10,
+        "STRIDE": 1,
+        "SMOOTHING_WINDOW": 3,
+        "MIN_BOUNDARY_DISTANCE": 5,
+        "MIN_TOPIC_LENGTH": 5,
+        "BOUNDARY_PROMINENCE": null,
+        "BOUNDARY_PROMINENCE_STD_MULTIPLIER": 0.5,
+        "ENABLE_SHORT_SEGMENT_DOWNWEIGHTING": false,
+        "SHORT_SEGMENT_WORD_THRESHOLD": 3,
+        "SHORT_SEGMENT_WEIGHT": 0.3
+      }
+    }
+  }
+}

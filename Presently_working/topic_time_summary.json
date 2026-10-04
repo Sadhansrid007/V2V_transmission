@@ -1,0 +1,183 @@
+{
+  "dd68ca631f44dd26": {
+    "video_url": "https://ecvideos.pesuacademy.com/Server4/ClassRoomVideos/publish/22897/neha.sharma/22897_neha.sharma_1082_20260807112800014_Video_ENC.mp4",
+    "important": {
+      "total_seconds": 2468.89,
+      "periods": [
+        {
+          "start": 509.12,
+          "end": 721.26,
+          "duration": 212.14,
+          "topic_ids": [
+            1
+          ]
+        },
+        {
+          "start": 1106.74,
+          "end": 1215.86,
+          "duration": 109.12,
+          "topic_ids": [
+            2
+          ]
+        },
+        {
+          "start": 1215.24,
+          "end": 1419.82,
+          "duration": 204.58,
+          "topic_ids": [
+            3
+          ]
+        },
+        {
+          "start": 1424.7,
+          "end": 1516.0,
+          "duration": 91.3,
+          "topic_ids": [
+            4
+          ]
+        },
+        {
+          "start": 1553.02,
+          "end": 1587.86,
+          "duration": 34.84,
+          "topic_ids": [
+            5
+          ]
+        },
+        {
+          "start": 1587.8,
+          "end": 1692.6,
+          "duration": 104.8,
+          "topic_ids": [
+            6
+          ]
+        },
+        {
+          "start": 1693.38,
+          "end": 1774.1,
+          "duration": 80.72,
+          "topic_ids": [
+            7
+          ]
+        },
+        {
+          "start": 1776.5,
+          "end": 1864.02,
+          "duration": 87.52,
+          "topic_ids": [
+            8
+          ]
+        },
+        {
+          "start": 1863.8,
+          "end": 1978.78,
+          "duration": 114.98,
+          "topic_ids": [
+            9
+          ]
+        },
+        {
+          "start": 1979.96,
+          "end": 2057.82,
+          "duration": 77.86,
+          "topic_ids": [
+            10
+          ]
+        },
+        {
+          "start": 2105.62,
+          "end": 2178.96,
+          "duration": 73.34,
+          "topic_ids": [
+            12
+          ]
+        },
+        {
+          "start": 2179.92,
+          "end": 2312.82,
+          "duration": 132.9,
+          "topic_ids": [
+            13
+          ]
+        },
+        {
+          "start": 2312.54,
+          "end": 2484.88,
+          "duration": 172.34,
+          "topic_ids": [
+            14,
+            15
+          ]
+        },
+        {
+          "start": 2484.44,
+          "end": 2564.54,
+          "duration": 80.1,
+          "topic_ids": [
+            16
+          ]
+        },
+        {
+          "start": 2564.06,
+          "end": 2747.48,
+          "duration": 183.42,
+          "topic_ids": [
+            17,
+            18
+          ]
+        },
+        {
+          "start": 2747.24,
+          "end": 2971.54,
+          "duration": 224.3,
+          "topic_ids": [
+            19
+          ]
+        },
+        {
+          "start": 2973.0,
+          "end": 3060.12,
+          "duration": 87.12,
+          "topic_ids": [
+            20
+          ]
+        },
+        {
+          "start": 3060.92,
+          "end": 3174.02,
+          "duration": 113.1,
+          "topic_ids": [
+            21
+          ]
+        },
+        {
+          "start": 3173.48,
+          "end": 3457.89,
+          "duration": 284.41,
+          "topic_ids": [
+            22,
+            23
+          ]
+        }
+      ]
+    },
+    "filler": {
+      "total_seconds": 47.16,
+      "periods": [
+        {
+          "start": 2057.44,
+          "end": 2104.6,
+          "duration": 47.16,
+          "topic_ids": [
+            11
+          ]
+        }
+      ]
+    },
+    "uncertain": {
+      "total_seconds": 0,
+      "periods": []
+    },
+    "video_duration_seconds": 3840.04
+  }
+}
