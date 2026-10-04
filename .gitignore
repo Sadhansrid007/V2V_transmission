@@ -1,0 +1,16 @@
+# API keys - never commit this
+.env
+
+# Generated data folders - too large for git
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code settings
+.vscode/
+
+# Streamlit cache
+.streamlit/
